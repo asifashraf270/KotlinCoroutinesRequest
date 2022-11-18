@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Single Network Call"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:id="@+id/singleNetworkCall"/>
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="match_parent"
+       android:text="Series Network Call"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/singleNetworkCall"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:id="@+id/seriesNetworkCall"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
